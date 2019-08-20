@@ -13,13 +13,13 @@ object ForDemo {
     def main(args: Array[String]): Unit = {
         val words: Array[String] = Array("hello", "hello", "world", "you", "are", "how");
         val countMap = wordCountFor(words)
-        for (j <- 10 to 100 if j % 2 == 0) {
+        /*for (j <- 10 to 100 if j % 2 == 0) {
             print(j)
         }
         for (j <- 10 until 100 if j % 2 == 0) {
             print(j)
-        }
-//        countMap.foreach(println)
+        }*/
+        countMap.foreach(println)
     }
 
     def wordCount(words: Array[String]): Map[String, Int] = {

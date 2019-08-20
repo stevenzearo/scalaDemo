@@ -1,0 +1,4 @@
+jdbc:
+  url: jdbc://localhost:3306/tpp?serverTimezone=UTC
+  user-name: root
+  password: root
