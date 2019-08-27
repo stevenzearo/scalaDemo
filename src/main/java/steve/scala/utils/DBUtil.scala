@@ -1,9 +1,7 @@
 package steve.scala.utils
 
-import java.sql.DriverManager
 
 import com.mysql.cj.jdbc.{Driver, JdbcConnection}
-import org.yaml.snakeyaml.Yaml
 
 /**
   * @Author steve
@@ -17,7 +15,7 @@ object DBUtil {
     private var url = ""
     private def init(): Unit = {
         classOf[Driver]
-        val stream = getClass.getResourceAsStream("jdbc.yml")
+
 //        Ymal
 //        url = io.Source.fromFile("jdbc.yml").asInstanceOf[Map]
         //        val connection = DriverManager.getConnection()

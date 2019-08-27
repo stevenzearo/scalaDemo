@@ -16,6 +16,5 @@ object IoDemo {
         val source = Source.fromFile("D:\\projects\\scalaDemo\\src\\main\\resources\\jdbc.yml")
         val reader = source.mkString
         val yaml = new Yaml
-        val iterable = yaml.loadAll(reader)
     }
 }
