@@ -1,15 +1,13 @@
-package steve.scala.demo
+package steve.scala.file
 
-import java.io.{BufferedReader, File, FileInputStream, FileReader, InputStream, InputStreamReader}
-
-import scala.io.Source
+import scala.io.{BufferedSource, Source}
 
 /**
  * @author steve
  */
 object FileTest {
   def main(args: Array[String]): Unit = {
-    val path = "C:\\Users\\steve\\IdeaProjects\\scalaDemo\\src\\main\\java\\steve\\scala\\demo\\test.txt"
+    val path: String = "C:\\Users\\steve\\IdeaProjects\\scalaDemo\\src\\main\\java\\steve\\scala\\demo\\test.txt"
     /*val file = new File(path)
     if (file.exists()) {
       val stream = new FileInputStream(file)
@@ -17,9 +15,9 @@ object FileTest {
       val value = reader.lines()
       value.forEach(s => println(s))
     }*/
-    val file2 = Source.fromFile(path)
+    val file2: BufferedSource = Source.fromFile(path)
     try {
-      file2.getLines().foreach(s => println(s))
+      file2.getLines().foreach(println(_: String))
     } finally {
       file2.close()
     }

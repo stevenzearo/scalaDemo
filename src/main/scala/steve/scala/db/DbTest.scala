@@ -1,8 +1,7 @@
-package steve.scala.demo
-
-import java.sql.DriverManager
+package steve.scala.db
 
 import com.mysql.cj.jdbc.Driver
+import java.sql.DriverManager
 
 /**
  * @author steve

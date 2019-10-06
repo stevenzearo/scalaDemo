@@ -1,23 +1,20 @@
 package steve.scala.demo
 
 /**
-  * @Author steve
-  * @Date 2019/8/20
-  * @Time 10:39
-  * @Version 1.0
-  */
+ * @author steve
+ */
 object ForDemo {
 
 
     // wordCount
     def main(args: Array[String]): Unit = {
         val words: Array[String] = Array("hello", "hello", "world", "you", "are", "how");
-        val countMap = wordCountFor(words)
+        val countMap: Map[String, Int] = wordCountFor(words)
         countMap.foreach(println)
     }
 
     def wordCount(words: Array[String]): Map[String, Int] = {
-        words.map((_, 1)).groupBy(_._1).mapValues(_.length)
+        words.map(((_: String), 1)).groupBy((_: (String, Int))._1).mapValues((_: Array[(String, Int)]).length)
     }
 
     def wordCountFor(words: Array[String]): Map[String, Int] = {

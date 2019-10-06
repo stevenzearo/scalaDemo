@@ -4,11 +4,8 @@ package steve.scala.utils
 import com.mysql.cj.jdbc.{Driver, JdbcConnection}
 
 /**
-  * @Author steve
-  * @Date 2019/8/20
-  * @Time 15:29
-  * @Version 1.0
-  */
+ * @author steve
+ */
 object DBUtil {
     private var userName = ""
     private var password = ""
