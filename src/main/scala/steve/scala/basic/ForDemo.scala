@@ -1,4 +1,4 @@
-package steve.scala.demo
+package steve.scala.basic
 
 /**
  * @author steve
