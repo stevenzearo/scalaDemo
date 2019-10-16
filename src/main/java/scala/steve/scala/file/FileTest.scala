@@ -1,13 +1,13 @@
-package steve.scala.file
+package java.steve.java.file
 
 import scala.io.{BufferedSource, Source}
 
 /**
- * @author steve
+ * @author java.steve
  */
 object FileTest {
   def main(args: Array[String]): Unit = {
-    val path: String = "C:\\Users\\steve\\IdeaProjects\\scalaDemo\\src\\main\\java\\steve\\scala\\demo\\test.txt"
+    val path: String = "C:\\Users\\java.steve\\IdeaProjects\\scalaDemo\\src\\main\\java\\java.steve\\java\\demo\\test.txt"
     /*val file = new File(path)
     if (file.exists()) {
       val stream = new FileInputStream(file)

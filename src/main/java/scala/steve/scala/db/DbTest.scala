@@ -1,10 +1,10 @@
-package steve.scala.db
+package java.steve.java.db
 
 import com.mysql.cj.jdbc.Driver
 import java.sql.DriverManager
 
 /**
- * @author steve
+ * @author java.steve
  */
 object DbTest {
   def main(args: Array[String]): Unit = {
@@ -16,7 +16,7 @@ object DbTest {
     val password = "root"
     val url = "jdbc:" + dBTye + "://" + host + ":" + port + "/" + dbName + "?serverTimezone=UTC"
 
-    classOf[Driver]
+//    classOf[Driver]
     val connection = DriverManager.getConnection(url, userName, password)
     val sql = "select * from user_info"
     val statement = connection.prepareStatement(sql)

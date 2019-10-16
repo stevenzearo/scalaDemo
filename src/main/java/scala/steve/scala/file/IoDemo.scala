@@ -1,10 +1,10 @@
-package steve.scala.file
+package java.steve.java.file
 
 import org.yaml.snakeyaml.Yaml
 import scala.io.Source
 
 /**
- * @author steve
+ * @author java.steve
  */
 object IoDemo {
     def main(args: Array[String]) : Unit = {
