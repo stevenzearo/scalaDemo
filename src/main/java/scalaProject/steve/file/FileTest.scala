@@ -1,9 +1,9 @@
-package scala.steve.scala.file
+package scalaProject.steve.file
 
 import scala.io.{BufferedSource, Source}
 
 /**
- * @author java.steve
+ * @author steve
  */
 object FileTest {
   def main(args: Array[String]): Unit = {

@@ -1,7 +1,7 @@
-package scala.steve.scala.basic
+package scalaProject.steve.basic
 
 /**
- * @author java.steve
+ * @author steve
  */
 object ForDemo {
 

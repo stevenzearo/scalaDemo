@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.List;
 
 /**
- * @author java.steve
+ * @author steve
  */
 class Single{
     private static Single single= new Single();

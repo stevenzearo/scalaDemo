@@ -1,9 +1,9 @@
-package scala.steve.scala.db
+package scalaProject.steve.db
 
 import java.sql.DriverManager
 
 /**
- * @author java.steve
+ * @author steve
  */
 object DbTest {
   def main(args: Array[String]): Unit = {

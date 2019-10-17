@@ -1,7 +1,7 @@
-package scala.steve.scala.test
+package scalaProject.steve.test
 
 /**
- * @author java.steve
+ * @author steve
  */
 object Test2 {
   def main(args: Array[String]): Unit = {
