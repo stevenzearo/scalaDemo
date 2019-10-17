@@ -1,6 +1,5 @@
-package java.steve.java.db
+package scala.steve.scala.db
 
-import com.mysql.cj.jdbc.Driver
 import java.sql.DriverManager
 
 /**
@@ -16,16 +15,16 @@ object DbTest {
     val password = "root"
     val url = "jdbc:" + dBTye + "://" + host + ":" + port + "/" + dbName + "?serverTimezone=UTC"
 
-//    classOf[Driver]
+    //    classOf[Driver]
     val connection = DriverManager.getConnection(url, userName, password)
-    val sql = "select * from user_info"
+    val sql = "select * from user_infos"
     val statement = connection.prepareStatement(sql)
     try {
       val set = statement.executeQuery()
       while (set.next()) {
-        val userId = set.getInt("user_id")
-        val userName = set.getString("user_name")
-        val userPwd = set.getString("pwd")
+        val userId = set.getInt("id")
+        val userName = set.getString("name")
+        val userPwd = set.getString("password")
         println(userId + "-" + userName + ": " + userPwd)
       }
     } finally {
@@ -33,8 +32,6 @@ object DbTest {
       connection.close()
     }
   }
-
-
 
 
 }

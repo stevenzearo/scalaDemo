@@ -1,5 +1,4 @@
-package java.steve.java.utils
-
+package scala.steve.scala.utils
 
 import java.sql.{Connection, DriverManager}
 

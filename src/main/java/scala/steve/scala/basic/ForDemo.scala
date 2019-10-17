@@ -1,4 +1,4 @@
-package java.steve.java.basic
+package scala.steve.scala.basic
 
 /**
  * @author java.steve

@@ -1,4 +1,4 @@
-package java.steve.java.file
+package scala.steve.scala.file
 
 import scala.io.{BufferedSource, Source}
 

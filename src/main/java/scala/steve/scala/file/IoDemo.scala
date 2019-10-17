@@ -1,4 +1,4 @@
-package java.steve.java.file
+package scala.steve.scala.file
 
 import org.yaml.snakeyaml.Yaml
 import scala.io.Source
