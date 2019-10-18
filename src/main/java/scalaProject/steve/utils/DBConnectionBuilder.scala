@@ -23,13 +23,10 @@ class DBConnectionBuilder(val url: String, val userName: String, val password: S
 
   def batchExecute(sql: String, params: Object*): Unit = {}
 
-  def selectOne[A](sql: String, viewClass: Class[A], params: Object*): A = {
-
-    _
+  def selectOne[A](sql: String, viewClass: Class[A], params: Object*): Unit = {
   }
 
-  def select[A](sql: String, viewClass: Class[A], params: Object*): mutable.Buffer[A] = {
+  def select[A](sql: String, viewClass: Class[A], params: Object*): Unit = {
     val set = statement.executeQuery()
-    _
   }
 }
