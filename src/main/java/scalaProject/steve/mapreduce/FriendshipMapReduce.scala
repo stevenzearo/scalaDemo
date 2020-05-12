@@ -10,7 +10,7 @@ import scala.io.Source
  */
 object FriendshipMapReduce {
   def main(args: Array[String]): Unit = {
-    val source = Source.fromFile("C:\\Users\\steve\\IdeaProjects\\scalaDemo\\src\\main\\resources\\mapreduce\\friends.txt")
+    /*val source = Source.fromFile("C:\\Users\\steve\\IdeaProjects\\scalaDemo\\src\\main\\resources\\mapreduce\\friends.txt")
     val pairs = source.getLines().toArray.map(line => {
       val key = line.split(":")(0)
       val values = line.split(":")(1).split(",")
@@ -34,6 +34,6 @@ object FriendshipMapReduce {
       .filter((v: Tuple3[String, String, Int]) => v._3 >= 2)
       .filter((v: Tuple3[String, String, Int]) => !v._1.equals(v._2))
         .toList
-    tuples.foreach(println)
+    tuples.foreach(println)*/
   }
 }

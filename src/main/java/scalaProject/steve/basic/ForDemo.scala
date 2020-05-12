@@ -6,7 +6,7 @@ package scalaProject.steve.basic
 object ForDemo {
 
 
-    // wordCount
+    /*// wordCount
     def main(args: Array[String]): Unit = {
         val words: Array[String] = Array("hello", "hello", "world", "you", "are", "how");
         val countMap: Map[String, Int] = wordCountFor(words)
@@ -29,5 +29,5 @@ object ForDemo {
             }
         }
         resultMap
-    }
+    }*/
 }
