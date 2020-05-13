@@ -16,7 +16,7 @@ class MinStack() {
   }
 
   def pop() {
-    if (tail == null)  return
+    if (tail == null) return
     tail = tail.previous
     if (tail != null) tail.next = null
   }
@@ -29,7 +29,7 @@ class MinStack() {
     var min: Int = tail.x
     while (tail.previous != null) {
       tail = tail.previous
-      min = if (tail.x > min)  min else tail.x
+      min = if (tail.x > min) min else tail.x
     }
     while (tail.next != null) {
       tail = tail.next
@@ -37,12 +37,6 @@ class MinStack() {
     min
   }
 
-}
-
-class Node(_x: Int) {
-  val x: Int = _x
-  var next: Node = null
-  var previous: Node = null
 }
 
 object MinStack {
@@ -58,8 +52,9 @@ object MinStack {
     println("top:" + top)
     val min2 = minStack.getMin()
     print("min:" + min2)
+  }
 }
-}
+
 /**
  * Your MinStack object will be instantiated and called as such:
  * var obj = new MinStack()
